@@ -9,7 +9,7 @@ import {
   PieChart, Pie, Cell, BarChart, Bar
 } from 'recharts';
 
-const API_BASE = "http://localhost:8080";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:8080";
 
 // Chart Color Palette
 const COLORS = ['#6366f1', '#8b5cf6', '#a78bfa', '#10b981', '#3b82f6', '#fbbf24', '#ef4444', '#14b8a6', '#6b7280'];
